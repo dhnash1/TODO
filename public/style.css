@@ -1,52 +1,61 @@
-body{
-  text-align: center;
-}
-h1{
-  text-align: center;
-  border-bottom: dashed 5px black;
-  width:30%;
-  margin: 5px auto;
+body {
+    text-align: center;
 }
 
-.colored{
-  background-color: lightgrey;
-}
-.inputs{
-  margin: 5px auto;
-  border: groove lightgreen 5px;
-  width: 30%;
-  text-align: center;
-}
-.main{
-  width: 90%;
-  text-align: center;
+h1 {
+    text-align: center;
+    border-bottom: dashed 5px black;
+    width: 30%;
+    margin: 5px auto;
 }
 
-.sec{
-  width: 5%;
-  text-align: center;
+.colored {
+    background-color: palegreen;
 }
-table, th, td{
-  border: solid black 1px;
-  width: 100%;
+
+.inputs {
+    margin: 5px auto;
+    border: groove lightgreen 5px;
+    width: 30%;
+    text-align: center;
 }
-th{
-  background-color: darkgrey;
+
+.main {
+    width: 90%;
+    text-align: center;
 }
+
+.sec {
+    width: 5%;
+    text-align: center;
+}
+
+table, th, td {
+    border: solid black 1px;
+    width: 100%;
+}
+
+th {
+    background-color: darkgrey;
+}
+
 .completeButton, .deleteButton {
-  border-radius: 7px;
+    border-radius: 7px;
 }
-.completeButton{
-  background-color: lime;
-}
-.deleteButton{
-  background-color: red;
-}
-.tables, .inputs{
-  box-shadow: 5px 5px 10px;
-}
-.right{
-  position: absolute;
-  bottom:0;
 
+.completeButton {
+    background-color: lime;
+}
+
+.deleteButton {
+    background-color: red;
+}
+
+.tables, .inputs {
+    box-shadow: 5px 5px 10px;
+}
+
+.right {
+    position: fixed;
+    bottom: 0;
 }
