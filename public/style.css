@@ -1,0 +1,15 @@
+.inputs{
+  border: solid black 5px;
+}
+
+table, th, td{
+  border: solid black 1px;
+}
+
+.main{
+  width: 90%;
+}
+
+.sec{
+  width: 5%;
+}
