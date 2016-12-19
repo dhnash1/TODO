@@ -1,15 +1,9 @@
 console.log('READY!');
 $(function(){
   getIt();
-  console.log('JQ!');
-  $('#createButton').on('click', function(){
-    var newTask = $('#taskCreate').val();
-    console.log("Golly gee, wouldja look what ive got!", newTask);
-    $('#taskCreate').val('');
-    sendIt(newTask);
-    getIt();
-  });//end that fancy click business
-clicks();
+  createClick();
+  clicks();
+  enter();
 });//end the dock rudder
 
 
@@ -80,4 +74,21 @@ function clicks(){
       }
     });
   });//Deletes a row when ya click the delete button
+}
+function enter(){
+  $("#taskCreate").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#createButton").click();
+    }
+});
+}
+
+function createClick(){
+  $('#createButton').on('click', function(){
+    var newTask = $('#taskCreate').val();
+    console.log("Golly gee, wouldja look what ive got!", newTask);
+    $('#taskCreate').val('');
+    sendIt(newTask);
+    getIt();
+  });//end that fancy click business
 }

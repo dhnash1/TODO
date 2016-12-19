@@ -1,8 +1,20 @@
+body{
+  text-align: center;
+}
+h1{
+  text-align: center;
+  border-bottom: dashed 5px black;
+  width:30%;
+  margin: 5px auto;
+}
+
 .colored{
-  background-color: lime;
+  background-color: lightgrey;
 }
 .inputs{
-  border: solid black 5px;
+  margin: 5px auto;
+  border: groove lightgreen 5px;
+  width: 30%;
   text-align: center;
 }
 .main{
@@ -16,5 +28,25 @@
 }
 table, th, td{
   border: solid black 1px;
-  width: 100%
+  width: 100%;
+}
+th{
+  background-color: darkgrey;
+}
+.completeButton, .deleteButton {
+  border-radius: 7px;
+}
+.completeButton{
+  background-color: lime;
+}
+.deleteButton{
+  background-color: red;
+}
+.tables, .inputs{
+  box-shadow: 5px 5px 10px;
+}
+.right{
+  position: absolute;
+  bottom:0;
+
 }
